@@ -150,12 +150,4 @@ class Player():
 # platform class
 class Platform(pygame.sprite.Sprite):
     def __init__(self,x, y, width, moving):
-        pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.transform.scale(platform_image, (width, 10))
-        self.moving = moving
-        self.move_counter = random.randint(0, 50)
-        self.direction = random.choice([-1, 1])
-        self.speed = random.randint(1, 2)
-        self.rect = self.image.get_rect()
-        self.rect.x = x
-        self.rect.y = y
+       
